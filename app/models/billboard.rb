@@ -2,7 +2,7 @@ class Billboard < ApplicationRecord
 
 
   
-  # validates :title, presence: true
+  validates :title, presence: true
    
-  # has_many :artists, dependent: :destroy
+  has_many :artists, dependent: :destroy
 end
